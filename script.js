@@ -1,6 +1,6 @@
-const canvasTendencias = document.getElementById("GRAFICO_1");
+const canvasTendencias = document.getElementById("tendenciasChart");
 if (canvasTendencias) {
-    new Chart(document.getElementById("GRAFICO_1"), {
+    new Chart(canvasTendencias, {
         type: "bar",
         data: {
             labels: [2021, 2022, 2023, 2024, 2025],
@@ -67,7 +67,6 @@ if (canvasTendencias) {
         }
     });
 }
-
           new Chart(document.getElementById("dispersion2"), {
       type: "scatter",
   data: {
