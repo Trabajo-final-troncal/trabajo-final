@@ -307,11 +307,11 @@ new Chart(document.getElementById("graficoProfesores"), {
         ]
     },
     options: {
-        indexAxis: 'y', // Mantiene las barras agrupadas de forma horizontal
+        indexAxis: 'y',
         responsive: true,
         plugins: {
             legend: { 
-                display: true, // Aquí sí dejamos la leyenda para distinguir las tendencias
+                display: true, 
                 position: 'top' 
             }
         },
