@@ -196,9 +196,9 @@ if (canvas1) {
     },
   },
 });
-const canvasProfesores = document.getElementById("graficoProfesores");
-if (canvasProfesores) {
-    new Chart(canvasProfesores, {
+const canvas4 = document.getElementById("GRAFICO_4");
+if (canvas4) {
+    const GRAFICO_4 = new Chart(canvas4, {
         type: "bar",
         data: {
             labels: [
