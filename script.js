@@ -305,20 +305,19 @@ new Chart(document.getElementById("graficoProfesores"), {
                 borderWidth: 1
             }
         ]
-    },
+},
     options: {
         indexAxis: 'y',
         responsive: true,
+        maintainAspectRatio: false, 
         plugins: {
-            legend: { 
-                display: true, 
-                position: 'top' 
-            }
+            legend: { display: true, position: 'top' }
         },
         scales: {
             x: { beginAtZero: true }
         }
     }
+     
 });
 
 
