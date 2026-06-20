@@ -306,18 +306,20 @@ new Chart(document.getElementById("graficoProfesores"), {
             }
         ]
 },
-    options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false, 
-        plugins: {
-            legend: { display: true, position: 'top' }
-        },
-        scales: {
-            x: { beginAtZero: true }
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            plugins: {
+                legend: { 
+                    display: true, 
+                    position: 'top' 
+                }
+            },
+            scales: {
+                x: { beginAtZero: true }
+            }
         }
-    }
-     
-});
+    });
+}
 
 
