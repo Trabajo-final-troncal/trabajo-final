@@ -1,6 +1,4 @@
-
-
-            new Chart(document.getElementById("dispersion"), {
+ new Chart(document.getElementById("dispersion"), {
                 type: "scatter",
                 data: {
                     datasets: [
@@ -258,54 +256,56 @@
     },
   },
 });
-new Chart(document.getElementById("graficoProfesores"), {
-    type: "bar",
-    data: {
-        labels: [
-            'Pablo Domínguez González',
-            'Leonardo Soto Calquín',
-            'Jenny Abud Carrillo',
-            'Sebastián Pagueguy Fenner',
-            'Gabriela Pradenas Guentherodt'
-        ],
-        datasets: [
-            {
-                label: 'Ecología Materialidad y Futuros',
-                data: [13, 2, 2, 2, 1],
-                backgroundColor: 'rgba(54, 162, 235, 0.7)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1
-            },
-            {
-                label: 'Educación Activismo y Género',
-                data: [4, 5, 5, 1, 1],
-                backgroundColor: 'rgba(255, 99, 132, 0.7)',
-                borderColor: 'rgba(255, 99, 132, 1)',
-                borderWidth: 1
-            },
-            {
-                label: 'Salud Cuidado y Neurodiversidad',
-                data: [20, 3, 1, 3, 2],
-                backgroundColor: 'rgba(75, 192, 192, 0.7)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1
-            },
-            {
-                label: 'Tecnología Interacción y Medios',
-                data: [5, 1, 2, 3, 1],
-                backgroundColor: 'rgba(255, 206, 86, 0.7)',
-                borderColor: 'rgba(255, 206, 86, 1)',
-                borderWidth: 1
-            },
-            {
-                label: 'Territorio Identidad y Memoria',
-                data: [1, 3, 1, 1, 1],
-                backgroundColor: 'rgba(153, 102, 255, 0.7)',
-                borderColor: 'rgba(153, 102, 255, 1)',
-                borderWidth: 1
-            }
-        ]
-},
+const canvasProfesores = document.getElementById("graficoProfesores");
+if (canvasProfesores) {
+    new Chart(canvasProfesores, {
+        type: "bar",
+        data: {
+            labels: [
+                'Pablo Domínguez González',
+                'Leonardo Soto Calquín',
+                'Jenny Abud Carrillo',
+                'Sebastián Pagueguy Fenner',
+                'Gabriela Pradenas Guentherodt'
+            ],
+            datasets: [
+                {
+                    label: 'Ecología Materialidad y Futuros',
+                    data: [13, 2, 2, 2, 1],
+                    backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Educación Activismo y Género',
+                    data: [4, 5, 5, 1, 1],
+                    backgroundColor: 'rgba(255, 99, 132, 0.7)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Salud Cuidado y Neurodiversidad',
+                    data: [20, 3, 1, 3, 2],
+                    backgroundColor: 'rgba(75, 192, 192, 0.7)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Tecnología Interacción y Medios',
+                    data: [5, 1, 2, 3, 1],
+                    backgroundColor: 'rgba(255, 206, 86, 0.7)',
+                    borderColor: 'rgba(255, 206, 86, 1)',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Territorio Identidad y Memoria',
+                    data: [1, 3, 1, 1, 1],
+                    backgroundColor: 'rgba(153, 102, 255, 0.7)',
+                    borderColor: 'rgba(153, 102, 255, 1)',
+                    borderWidth: 1
+                }
+            ]
+        },
         options: {
             indexAxis: 'y',
             responsive: true,
@@ -320,5 +320,4 @@ new Chart(document.getElementById("graficoProfesores"), {
             }
         }
     });
-
-
+}
