@@ -1,4 +1,4 @@
-const canvasTendencias = document.getElementById("tendenciasChart");
+const canvasTendencias = document.getElementById("GRAFICO_1");
 if (canvasTendencias) {
     new Chart(canvasTendencias, {
         type: "bar",
