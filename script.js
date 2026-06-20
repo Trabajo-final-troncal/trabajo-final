@@ -1,6 +1,6 @@
-const canvasTendencias = document.getElementById("tendenciasChart");
-if (canvasTendencias) {
-    new Chart(canvasTendencias, {
+const canvas1 = document.getElementById("GRAFICO_1");
+if (canvas1) {
+    const GRAFICO_1 = new Chart(canvas1, {
         type: "bar",
         data: {
             labels: [2021, 2022, 2023, 2024, 2025],
