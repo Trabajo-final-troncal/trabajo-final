@@ -1,3 +1,5 @@
+const canvasTendencias = document.getElementById("tendenciasChart");
+if (canvasTendencias) {
     new Chart(canvasTendencias, {
         type: "bar",
         data: {
@@ -6,35 +8,35 @@
                 {
                     label: "Ecología, Materialidad y Futuros",
                     data: [0, 4, 16, 24, 24],
-                    backgroundColor: "rgba(255, 99, 132, 0.7)",
+                    backgroundColor: "rgba(255, 99, 132, 0.7)", // Rosado/Rojo
                     borderColor: "rgba(255, 99, 132, 1)",
                     borderWidth: 1
                 },
                 {
                     label: "Educación, Activismo y Género",
                     data: [0, 7, 18, 28, 19],
-                    backgroundColor: "rgba(54, 162, 235, 0.7)",
+                    backgroundColor: "rgba(54, 162, 235, 0.7)", // Azul
                     borderColor: "rgba(54, 162, 235, 1)",
                     borderWidth: 1
                 },
                 {
                     label: "Salud, Cuidado y Neurodiversidad",
                     data: [0, 3, 14, 26, 35],
-                    backgroundColor: "rgba(255, 206, 86, 0.7)",
+                    backgroundColor: "rgba(255, 206, 86, 0.7)", // Amarillo
                     borderColor: "rgba(255, 206, 86, 1)",
                     borderWidth: 1
                 },
                 {
                     label: "Tecnología, Interacción y Medios",
                     data: [1, 1, 12, 16, 25],
-                    backgroundColor: "rgba(75, 192, 192, 0.7)",
+                    backgroundColor: "rgba(75, 192, 192, 0.7)", // Verde azulado
                     borderColor: "rgba(75, 192, 192, 1)",
                     borderWidth: 1
                 },
                 {
                     label: "Territorio, Identidad y Memoria",
                     data: [2, 6, 16, 14, 23],
-                    backgroundColor: "rgba(153, 102, 255, 0.7)",
+                    backgroundColor: "rgba(153, 102, 255, 0.7)", // Morado
                     borderColor: "rgba(153, 102, 255, 1)",
                     borderWidth: 1
                 }
@@ -51,19 +53,20 @@
             },
             scales: {
                 x: {
-                    stacked: true, // Crucial: Apila las barras en el eje X
+                    stacked: true,
                     grid: { color: "rgba(0,0,0,0.06)" },
                     ticks: { font: { family: "'Georama', sans-serif", size: 11 } }
                 },
                 y: {
-                    stacked: true, // Crucial: Apila las barras en el eje Y
+                    stacked: true,
                     grid: { color: "rgba(0,0,0,0.06)" },
                     beginAtZero: true,
                     ticks: { font: { family: "'Georama', sans-serif", size: 11 } }
                 }
             }
         }
-            });
+    });
+}
 
           new Chart(document.getElementById("dispersion2"), {
       type: "scatter",
