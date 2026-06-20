@@ -320,6 +320,5 @@ new Chart(document.getElementById("graficoProfesores"), {
             }
         }
     });
-}
 
 
