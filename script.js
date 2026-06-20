@@ -1,130 +1,68 @@
- new Chart(document.getElementById("dispersion"), {
-                type: "scatter",
-                data: {
-                    datasets: [
-                        {
-                            label: "Scatter Dataset",
-                            data: [
-                                { name: "BACHILLERATO EN ARTES, ARQUITECTURA Y DISEÑO - UNIVERSIDAD FINIS TERRAE", x: 5, y: 7200000 },
-                                { name: "BACHILLERATO EN DISEÑO - UNIVERSIDAD DEL DESARROLLO", x: 6, y: 10364360 },
-                                { name: "DISEÑO - UNIVERSIDAD AUSTRAL DE CHILE", x: 6, y: 5887000 },
-                                { name: "DISEÑO - UNIVERSIDAD CATÓLICA DE TEMUCO", x: 5, y: 5276000 },
-                                { name: "DISEÑO - UNIVERSIDAD DE CHILE", x: 7, y: 6486700 },
-                                { name: "DISEÑO - UNIVERSIDAD DE LA SERENA", x: 5, y: 4071000 },
-                                { name: "DISEÑO - UNIVERSIDAD DE LAS AMERICAS", x: 5, y: 4730000 },
-                                { name: "DISEÑO - UNIVERSIDAD DE PLAYA ANCHA DE CIENCIAS DE LA EDUCACION", x: 5, y: 4305000 },
-                                { name: "DISEÑO - UNIVERSIDAD DE TALCA", x: 6, y: 5887000 },
-                                { name: "DISEÑO - UNIVERSIDAD DE VALPARAISO", x: 6, y: 5713000 },
-                                { name: "DISEÑO - UNIVERSIDAD DE VIÑA DEL MAR", x: 4, y: 4277000 },
-                                { name: "DISEÑO DE EXPERIENCIAS INMERSIVAS Y VIDEOJUEGOS - UNIVERSIDAD GABRIELA MISTRAL", x: 4, y: 4814000 },
-                                { name: "DISEÑO DE IMAGEN ESPECIALIDAD MODA  - UNIACC - UNIVERSIDAD DE ARTES, CIENCIAS Y COMUNICACION", x: 3, y: 4210000},
-                                { name: "DISEÑO DE INTERIORES Y AMBIENTES  - UNIACC - UNIVERSIDAD DE ARTES, CIENCIAS Y COMUNICACION", x: 3, y: 4030000 },
-                                { name: "DISEÑO DE JUEGOS DIGITALES - UNIVERSIDAD ANDRES BELLO", x: 6, y: 7136000 },
-                                { name: "DISEÑO DE JUEGOS DIGITALES - UNIVERSIDAD ANDRES BELLO", x: 6, y: 5069000 },
-                                { name: "DISEÑO DE MODA Y MANAGEMENT - UNIVERSIDAD FINIS TERRAE", x: 5, y: 7320000 },
-                                { name: "DISEÑO DE VESTUARIO Y TEXTIL - UNIVERSIDAD ANDRES BELLO", x: 6, y: 7148000 },
-                                { name: "DISEÑO DE VIDEOJUEGOS - UNIVERSIDAD GABRIELA MISTRAL", x: 4, y: 4814000 },
-                                { name: "DISEÑO EN ANIMACIÓN DIGITAL  - UNIVERSIDAD GABRIELA MISTRAL", x: 4, y: 4814000 },
-                                { name: "DISEÑO EN COMUNICACIÓN VISUAL  - UTEM - UNIVERSIDAD TECNOLOGICA METROPOLITANA", x: 4, y: 4763300 },
-                                { name: "DISEÑO EN COMUNICACION VISUAL - UNIVERSIDAD DE SANTIAGO DE CHILE", x: 7, y: 6552000 },
-                                { name: "DISEÑO EN INTERACCION DIGITAL  - UNIVERSIDAD GABRIELA MISTRAL", x: 4, y: 4814000 },
-                                { name: "DISEÑO - PONTIFICIA UNIVERSIDAD CATÓLICA DE CHILE", x: 7, y: 8080000 },
-                                { name: "DISEÑO - PONTIFICIA UNIVERSIDAD CATÓLICA DE VALPARAÍSO", x: 7, y: 6915000},
-                                { name: "DISEÑO - UNIVERSIDAD DE LAS AMÉRICAS", x: 5, y: 4730000 },
-                                { name: "DISEÑO - UNIVERSIDAD DEL DESARROLLO", x: 6, y: 9754692 },
-                                { name: "DISEÑO - UNIVERSIDAD DEL DESARROLLO", x: 6, y: 6056038 },
-                                { name: "DISEÑO - UNIVERSIDAD DIEGO PORTALES", x: 6, y: 7597000 },
-                                { name: "DISEÑO - UNIVERSIDAD FINIS TERRAE", x: 5, y: 7320000 },
-                                { name: "DISEÑO EN MARKETING DIGITAL - UNIVERSIDAD GABRIELA MISTRAL", x: 4, y: 4814000},
-                                { name: "DISEÑO GRÁFICO - UNIVERSIDAD ANDRES BELLO", x: 6, y: 7065000 },
-                                { name: "DISEÑO GRÁFICO - UNIVERSIDAD DEL BÍO-BÍO", x: 5, y: 4307000 },
-                                { name: "DISEÑO GRÁFICO ESPECIALIDAD MULTIMEDIA - UNIACC - UNIVERSIDAD DE ARTES, CIENCIAS Y COMUNICACION", x: 3, y: 4210000},
-                                { name: "DISEÑO GRÁFICO MENCIÓN DISEÑO ESTRATÉGICO - UNIVERSIDAD DE ANTOFAGASTA", x: 5, y: 5120000 },
-                                { name: "DISEÑO INDUSTRIAL - UNIVERSIDAD DE SANTIAGO DE CHILE", x: 7, y: 4989000 },
-                                { name: "DISEÑO INDUSTRIAL - UTEM - UNIVERSIDAD TECNOLOGICA METROPOLITANA", x: 4, y: 4891000},
-                                { name: "DISEÑO INDUSTRIAL - UNIVERSIDAD DEL BÍO-BÍO", x: 5, y: 4434000 },
-                                { name: "DISEÑO MENCION INDUSTRIAL/GRÁFICO/AMBIENTES - UNIVERSIDAD MAYOR", x: 5, y: 7214218},
-                                { name: "DISEÑO MULTIMEDIA - UNIVERSIDAD DE TARAPACA", x: 6, y: 6555000 },
-                                { name: "DISEÑO TEATRAL - UNIVERSIDAD DE CHILE", x: 7, y: 5492400 },
-                                { name: "INGENIERIA EN DISEÑO DE PRODUCTOS - UNIVERSIDAD TÉCNICA FEDERICO SANTA MARIA", x: 6, y: 6000000 },
-                                { name: "INGENIERIA EN DISEÑO - UNIVERSIDAD ADOLFO IBAÑEZ", x: 6, y: 9754692 },
-                                { name: "INGENIERIA EN FABRICACION Y DISEÑO INDUSTRIAL - UNIVERSIDAD TÉCNICA FEDERICO SANTA MARIA", x: 6, y: 5180000 },
-                                { name: "INGENIERIA EN REALIDAD VIRTUAL Y DISEÑO DE JUEGOS DIGITALES - UNIVERSIDAD BERNARDO O'HIGGINS", x: 5, y: 5900000 },
-                            ],
-                            backgroundColor: "rgba(241,142,45,.75)",
-                            pointRadius: 5,
-                            pointHoverRadius: 5,
-                        },
-                        {
-                            label: "Línea de referencia",
-                            type: "line",
-                            data: [
-                                { x: 3, y: 4030000 },
-                                { x: 7, y: 8080000 },
-                            ],
-                            borderColor: "rgba(102,102,102,.2)",
-                            borderWidth: 1,
-                            pointRadius: 0,
-                            pointHoverRadius: 0,
-                            fill: false,
-                            tension: 0,
-                        },
-                    ],
+    new Chart(canvasTendencias, {
+        type: "bar",
+        data: {
+            labels: [2021, 2022, 2023, 2024, 2025],
+            datasets: [
+                {
+                    label: "Ecología, Materialidad y Futuros",
+                    data: [0, 4, 16, 24, 24],
+                    backgroundColor: "rgba(255, 99, 132, 0.7)",
+                    borderColor: "rgba(255, 99, 132, 1)",
+                    borderWidth: 1
                 },
-                options: {
-                    scales: {
-                        x: {
-                            type: "linear",
-                            position: "bottom",
-                            grid: { color: "rgba(0,0,0,0.06)" },
-                            border: { color: "#ccc" },
-                            ticks: {
-                                font: { family: "'Georama', sans-serif", size: 11 },
-                                color: "#999",
-                                callback: function (value) {
-                                    return Number.isInteger(value) ? value + " años" : null;
-                                },
-                            },
-                        },
-                        y: {
-                            grid: { color: "rgba(0,0,0,0.06)" },
-                            border: { color: "#bbb", dash: [4, 4] },
-                            ticks: {
-                                font: { family: "'Georama', sans-serif", size: 11 },
-                                color: "#999",
-                                callback: function (value) {
-                                    return "$ " + value.toLocaleString("es-CL");
-                                },
-                            },
-                        },
-                    },
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: {
-                            backgroundColor: "#fff",
-                            borderColor: "#ddd",
-                            borderWidth: 1,
-                            titleColor: "#111",
-                            bodyColor: "#555",
-                            titleFont: { family: "'Georama', sans-serif", size: 12, weight: "600" },
-                            bodyFont: { family: "'Georama', sans-serif", size: 11 },
-                            padding: 10,
-                            filter: function (item) {
-                                return item.datasetIndex === 0;
-                            },
-                            callbacks: {
-                                label: function (context) {
-                                    const point = context.raw;
-                                    return [
-                                        point.name,
-                                        "Universidad acreditada por " + point.x + " años",
-                                        "Arancel $ " + point.y.toLocaleString("es-CL"),
-                                    ];
-                                },
-                            },
-                        },
-                    },
+                {
+                    label: "Educación, Activismo y Género",
+                    data: [0, 7, 18, 28, 19],
+                    backgroundColor: "rgba(54, 162, 235, 0.7)",
+                    borderColor: "rgba(54, 162, 235, 1)",
+                    borderWidth: 1
                 },
+                {
+                    label: "Salud, Cuidado y Neurodiversidad",
+                    data: [0, 3, 14, 26, 35],
+                    backgroundColor: "rgba(255, 206, 86, 0.7)",
+                    borderColor: "rgba(255, 206, 86, 1)",
+                    borderWidth: 1
+                },
+                {
+                    label: "Tecnología, Interacción y Medios",
+                    data: [1, 1, 12, 16, 25],
+                    backgroundColor: "rgba(75, 192, 192, 0.7)",
+                    borderColor: "rgba(75, 192, 192, 1)",
+                    borderWidth: 1
+                },
+                {
+                    label: "Territorio, Identidad y Memoria",
+                    data: [2, 6, 16, 14, 23],
+                    backgroundColor: "rgba(153, 102, 255, 0.7)",
+                    borderColor: "rgba(153, 102, 255, 1)",
+                    borderWidth: 1
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { 
+                    display: true, 
+                    position: "top",
+                    labels: { font: { family: "'Georama', sans-serif", size: 11 } }
+                }
+            },
+            scales: {
+                x: {
+                    stacked: true, // Crucial: Apila las barras en el eje X
+                    grid: { color: "rgba(0,0,0,0.06)" },
+                    ticks: { font: { family: "'Georama', sans-serif", size: 11 } }
+                },
+                y: {
+                    stacked: true, // Crucial: Apila las barras en el eje Y
+                    grid: { color: "rgba(0,0,0,0.06)" },
+                    beginAtZero: true,
+                    ticks: { font: { family: "'Georama', sans-serif", size: 11 } }
+                }
+            }
+        }
             });
 
           new Chart(document.getElementById("dispersion2"), {
