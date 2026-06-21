@@ -263,8 +263,9 @@ if (canvas4) {
     });
 }
 
+
             const t = document.querySelector("#este");
-            const URL = "https://api.myjson.online/v1/records/80104370-a699-4e54-84a0-d3946662c31e";
+            const URL = "https://api.myjson.online/v1/records/20d49ba7-edd7-4752-9e74-ad924e565884";
 
             fetch(URL)
                 .then((respuesta) => {
@@ -277,7 +278,7 @@ if (canvas4) {
                     var trabajo = datos.data;
                     console.log(trabajo);
                     trabajo.forEach((x) => {
-                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.number}</td><td>${x.name}</td><td><a href="${x.repository}" target="_blank">${x.title}</a></td><td>${x.grade}</td><td>${x.category}</td><td>${x.tutor}</td></tr>`;
+                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.autor}</td><td><a href="${x.repositorio}" target="_blank">${x.proyecto}</a></td><td>${x.notafinal}</td><td>${x.enfoque}</td><td>${x.profe}</td></tr>`;
                     });
                 })
                 .catch((error) => {
