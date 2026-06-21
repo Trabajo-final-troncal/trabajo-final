@@ -292,3 +292,98 @@ figure figcaption {
 .leyenda-color-sin-costo {
   background: rgba(102, 102, 102, 0.4);
 }
+
+
+
+
+     :root {
+            --color-oscurisimo: hsl(0, 0%, 0%);
+            --color-oscuro: hsl(0, 0%, 0%);
+            --color-normal: hsl(215, 100%, 30%);
+            --color-iluminado: hsl(215, 100%, 30%);
+            --color-iluminadisimo: hsl(215, 100%, 90%);
+        }
+
+    
+        div#contenedor {
+
+            margin: 0 auto;
+            width: 900px;
+            max-height: 600px;
+            max-width: 980px;
+            overflow-y: auto;
+            
+        }
+
+        input {
+            border: 0.1rem solid var(--color-iluminado);
+            padding: 0.5rem 1rem;
+            font-family: inherit;
+            font-size: 15px;
+            color: var(--color-oscuro);
+            outline: none;
+            margin-bottom: 1.5rem;
+            width: 100%;
+            display: block;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="%231f1f1f"><path d="M200-800v241-1 400-640 200-200Zm0 720q-33 0-56.5-23.5T120-160v-640q0-33 23.5-56.5T200-880h320l240 240v100q-19-8-39-12.5t-41-6.5v-41H480v-200H200v640h241q16 24 36 44.5T521-80H200Zm531-149q29-29 29-71t-29-71q-29-29-71-29t-71 29q-29 29-29 71t29 71q29 29 71 29t71-29ZM864-40 756-148q-21 14-45.5 21t-50.5 7q-75 0-127.5-52.5T480-300q0-75 52.5-127.5T660-480q75 0 127.5 52.5T840-300q0 26-7 50.5T812-204L920-96l-56 56Z"/></svg>');
+            background-repeat: no-repeat;
+            background-size: 1rem;
+            background-position: 99% center;
+        }
+
+        input::placeholder {
+            color: var(--color-iluminado);
+        }
+
+        input:focus {
+            border-color: var(--color-normal);
+        }
+
+
+    div#contenedordetabla {
+            font-size: 90%;
+
+        }
+
+        table {
+            
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            margin-bottom: 3rem;
+            margin: 0 auto;
+        }
+
+        thead {
+            background: var(--color-iluminadisimo);
+            color: var(--color-oscuro);
+            position: sticky;  /* Mantiene el encabezado fijo al hacer scroll vertical */
+            top: 0;
+        }
+
+        tbody {
+            color: var(--color-normal);
+        }
+
+        td,
+        th {
+            border: 1px solid var(--color-normal);
+            padding: 0.75rem;
+        }
+
+        th:nth-child(1),
+        td:nth-child(1),
+        th:nth-child(4),
+        td:nth-child(4) {
+            text-align: center;
+        }
+
+        td:nth-child(2) {
+            color: var(--color-oscuro);
+            font-weight: 800;
+        }
+
+        td:nth-child(3) {
+            font-style: italic;
+        }
+
