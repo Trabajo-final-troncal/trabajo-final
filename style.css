@@ -303,38 +303,30 @@ figure figcaption {
 
     
         div#contenedor {
-            margin-top: 1.5rem;
-            font-family: var(--sans);
+            margin: 1.5rem auto;
             width: 100%;
-            max-width: 52rem;      /* ancho deseado, mayor a 42rem */
-            max-height: 600px;
-            overflow-y: auto;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
+            max-width: 980px;
             
         }
 
         input {
 
             outline: none;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.5rem;
             width: 100%;
             display: block;
-            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="%231f1f1f"><path d="M200-800v241-1 400-640 200-200Zm0 720q-33 0-56.5-23.5T120-160v-640q0-33 23.5-56.5T200-880h320l240 240v100q-19-8-39-12.5t-41-6.5v-41H480v-200H200v640h241q16 24 36 44.5T521-80H200Zm531-149q29-29 29-71t-29-71q-29-29-71-29t-71 29q-29 29-29 71t29 71q29 29 71 29t71-29ZM864-40 756-148q-21 14-45.5 21t-50.5 7q-75 0-127.5-52.5T480-300q0-75 52.5-127.5T660-480q75 0 127.5 52.5T840-300q0 26-7 50.5T812-204L920-96l-56 56Z"/></svg>');
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="%23e8571a"><path d="M200-800v241-1 400-640 200-200Zm0 720q-33 0-56.5-23.5T120-160v-640q0-33 23.5-56.5T200-880h320l240 240v100q-19-8-39-12.5t-41-6.5v-41H480v-200H200v640h241q16 24 36 44.5T521-80H200Zm531-149q29-29 29-71t-29-71q-29-29-71-29t-71 29q-29 29-29 71t29 71q29 29 71 29t71-29ZM864-40 756-148q-21 14-45.5 21t-50.5 7q-75 0-127.5-52.5T480-300q0-75 52.5-127.5T660-480q75 0 127.5 52.5T840-300q0 26-7 50.5T812-204L920-96l-56 56Z"/></svg>');
             background-repeat: no-repeat;
             background-size: 1.2rem;
             background-position: 97% center;
 
-              width: 100%;
-                font-family: var(--sans);
-                font-size: 0.95rem;
-                padding: 0.65rem 1rem;
-                border: 2px solid #ddd;
-                border-radius: 4px;
-                outline: none;
-                color: var(--accent);
-                transition: border-color 0.15s;
+            font-family: var(--sans);
+            font-size: 0.95rem;
+             padding: 0.65rem 1rem;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            color: var(--accent);
+            transition: border-color 0.15s;
 }
         
 
@@ -349,6 +341,15 @@ figure figcaption {
 
     div#contenedordetabla {
             font-size: 60%;
+            margin-top: 1rem;
+            font-family: var(--sans);
+            width: 100%;
+            max-width: 52rem;      /* ancho deseado, mayor a 42rem */
+            max-height: 550px;
+            overflow-y: auto;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         table {
