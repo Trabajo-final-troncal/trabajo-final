@@ -364,12 +364,17 @@ figure figcaption {
             background: var(--accent);
             color: var(--bg);
             position: sticky;  /* Mantiene el encabezado fijo al hacer scroll vertical */
-            top: 0;
+            top: -0.1px;  /* Ajusta la posición del encabezado para que quede justo en la parte superior */
         }
 
         tbody {
             color: var(--accent);
         }
+
+        tbody tr:hover {
+        background-color: #e8581a13;
+        transition: background-color 0.15s;
+       }
 
         td,
         th {
@@ -380,16 +385,19 @@ figure figcaption {
         th:nth-child(1),
         td:nth-child(1),
         th:nth-child(4),
-        td:nth-child(4) {
-            text-align: center;
+        td:nth-child(4),
+        th:nth-child(5) {
+            text-align: left;
         }
 
-        td:nth-child(2) {
+        td:nth-child(2),
+        td:nth-child(5) {
             color: var(--color-text);
-            font-weight: 800;
+            font-weight: bold;
         }
 
         td:nth-child(3) {
-            font-style: italic;
+            font-weight: bold;
+            text-align: center;
         }
 
