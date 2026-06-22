@@ -418,4 +418,5 @@ figure figcaption {
     width: 100%;
     height: auto;
     margin-top: -4.5vh;
+    display: block;
 }
