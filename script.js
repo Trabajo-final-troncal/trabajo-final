@@ -158,13 +158,22 @@ if (canvas4) {
                     console.error("Algo salió mal:", error);
                 });
 
-            function sinAcentos(str) {
-                return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-            }
+          
 
-            document.getElementById("elInput").addEventListener("keyup", function () {
-                const valor = sinAcentos(this.value.toLowerCase());
-                document.querySelectorAll("#este tr").forEach(function (fila) {
-                    fila.style.display = sinAcentos(fila.textContent.toLowerCase()).includes(valor) ? "" : "none";
-                });
-            });
+                function sinAcentos(str) {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+function filtrarTabla() {
+    const texto = sinAcentos(document.getElementById("elInput").value.toLowerCase());
+    const enfoque = document.getElementById("elSelectEnfoque").value;
+
+    document.querySelectorAll("#este tr").forEach(function (fila) {
+        const coincideTexto = sinAcentos(fila.textContent.toLowerCase()).includes(texto);
+        const coincideEnfoque = enfoque === "" || fila.children[3].textContent.trim() === enfoque;
+        fila.style.display = (coincideTexto && coincideEnfoque) ? "" : "none";
+    });
+}
+
+document.getElementById("elInput").addEventListener("keyup", filtrarTabla);
+document.getElementById("elSelectEnfoque").addEventListener("change", filtrarTabla);

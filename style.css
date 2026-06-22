@@ -344,7 +344,7 @@ figure figcaption {
             margin-top: 1rem;
             font-family: var(--sans);
             width: 100%;
-            max-width: 52rem;      /* ancho deseado, mayor a 42rem */
+            max-width: 52rem;      
             max-height: 550px;
             overflow-y: auto;
             position: relative;
@@ -364,8 +364,8 @@ figure figcaption {
         thead {
             background: var(--accent);
             color: var(--bg);
-            position: sticky;  /* Mantiene el encabezado fijo al hacer scroll vertical */
-            top: -0.1px;  /* Ajusta la posición del encabezado para que quede justo en la parte superior */
+            position: sticky;  
+            top: -0.1px;  
         }
 
         tbody {
@@ -402,3 +402,13 @@ figure figcaption {
             text-align: center;
         }
 
+    select#elSelectEnfoque {
+    width: 70%;
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    padding: 0.65rem 1rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    color: var(--accent);
+    background: white;
+}
