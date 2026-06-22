@@ -412,3 +412,10 @@ figure figcaption {
     color: var(--accent);
     background: white;
 }
+
+
+.video-header {
+    width: 100%;
+    height: auto;
+    margin-top: -4.5vh;
+}
