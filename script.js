@@ -138,7 +138,7 @@ if (canvas4) {
 
 
             const t = document.querySelector("#este");
-            const URL = "h###ttps://api.myjson.online/v1/records/28ff078f-e974-40ed-8f6e-b38b2285c538";
+            const URL = "https://api.myjson.online/v1/records/28ff078f-e974-40ed-8f6e-b38b2285c538";
 
             fetch(URL)
                 .then((respuesta) => {
