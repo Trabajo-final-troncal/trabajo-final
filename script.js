@@ -138,7 +138,7 @@ if (canvas4) {
 
 
             const t = document.querySelector("#este");
-            const URL = "https://api.myjson.online/v1/records/28ff078f-e974-40ed-8f6e-b38b2285c538";
+            const URL = "https://raw.githubusercontent.com/Trabajo-final-troncal/trabajo-final/refs/heads/main/datos-proyectos.json";
 
             fetch(URL)
                 .then((respuesta) => {
@@ -148,7 +148,7 @@ if (canvas4) {
                     return respuesta.json();
                 })
                 .then((datos) => {
-                    var trabajo = datos.data;
+                    var trabajo = datos;
                     console.log(trabajo);
                     trabajo.forEach((x) => {
                         t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.autor}</td><td><a href="${x.repositorio}" target="_blank">${x.proyecto}</a></td><td>${x.notafinal}</td><td>${x.enfoque}</td><td><a href="${x.portafolioacademico}" target="_blank">${x.profe}</a></td></tr>`;
