@@ -151,7 +151,7 @@ if (canvas4) {
                     var trabajo = datos;
                     console.log(trabajo);
                     trabajo.forEach((x) => {
-                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.autor}</td><td><a href="${x.repositorio}" target="_blank">${x.proyecto}</a></td><td>${x.notafinal}</td><td>${x.enfoque}</td><td><a href="${x.portafolioacademico}" target="_blank">${x.profe}</a></td></tr>`;
+                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.autor}</td><td><a href="${x.repositorio}" target="_blank">${x.proyecto}</a></td><td>${x.notafinal}</td><td>${x.enfoque}</td><td><a href="${x.portafolioacademico}" target="_blank">${x.profe}</a></td><td>${x.mencion}</td></tr>`;
                     });
                 })
                 .catch((error) => {
@@ -167,13 +167,16 @@ if (canvas4) {
 function filtrarTabla() {
     const texto = sinAcentos(document.getElementById("elInput").value.toLowerCase());
     const enfoque = document.getElementById("elSelectEnfoque").value;
+    const mension = document.getElementById("elSelectMencion").value;
 
     document.querySelectorAll("#este tr").forEach(function (fila) {
         const coincideTexto = sinAcentos(fila.textContent.toLowerCase()).includes(texto);
         const coincideEnfoque = enfoque === "" || fila.children[3].textContent.trim() === enfoque;
-        fila.style.display = (coincideTexto && coincideEnfoque) ? "" : "none";
+        const coincideMencion = mension === "" || fila.children[5].textContent.trim() === mension;
+        fila.style.display = (coincideTexto && coincideEnfoque && coincideMencion) ? "" : "none";
     });
 }
 
 document.getElementById("elInput").addEventListener("keyup", filtrarTabla);
 document.getElementById("elSelectEnfoque").addEventListener("change", filtrarTabla);
+document.getElementById("elSelectMencion").addEventListener("change", filtrarTabla);

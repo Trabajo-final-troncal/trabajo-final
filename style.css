@@ -413,6 +413,17 @@ figure figcaption {
     background: white;
 }
 
+ select#elSelectMencion {
+    width: 70%;
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    padding: 0.65rem 1rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    color: var(--accent);
+    background: white;
+}
+
 
 .video-header {
     width: 100%;
